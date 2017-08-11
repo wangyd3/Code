@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wangyd.firstcode">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3Sc72nWoGLfGjfvZ4KkF9qfKU78pZHjI" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ch03.listview.FruitActivity" />
+        <activity android:name=".ch03.recycler.RecyclerActivity" />
+        <activity android:name=".menu.MenuActivity" />
+        <activity android:name=".ch03.message.MessageActivity" />
+        <activity android:name=".ch03.customview.CustomActivity" />
+        <activity android:name=".ch02.lifecycle.FirstActivity" />
+        <activity android:name=".ch02.lifecycle.SecondActivity" />
+        <activity
+            android:name=".ch02.lifecycle.ThirdActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".ch06.litepal.LitepalActivity" />
+        <activity android:name=".ch07.permission.CallActivity" />
+        <activity android:name=".ch08.notification.NotificationActivity" />
+        <activity android:name=".ch08.notification.ShowActivity" />
+        <activity android:name=".ch08.camera.CameraAlbumActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.wangyd.firstcode.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".ch09.webview.WebViewActivity" />
+        <activity android:name=".ch09.webview.HttpActivity" />
+        <activity android:name=".ch09.webview.ParseActivity" />
+
+        <service
+            android:name=".ch10.service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ch10.service.ServiceActivity" />
+
+        <service
+            android:name=".ch10.service.MyIntentService"
+            android:exported="false" />
+        <service
+            android:name=".ch10.service.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ch10.service.DownloadActivity" />
+        <activity android:name=".ch11.LBSActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".ch12.MaterialActivity"
+            android:label="material"
+            android:theme="@style/AtyTheme" />
+        <activity
+            android:name=".ch12.FruitCActivity"
+            android:theme="@style/AtyTheme" />
+        <activity android:name=".ch11.UsbActivity">
+            <intent-filter>
+                <action android:name="com.pax.ft.usb_test" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".zz.FileActivity" />
+    </application>
+
+</manifest>

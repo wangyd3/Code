@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CODE</string>
+    <string name="change_state_of_section">Change state of section</string>
+    <string name="image_button_content_description">xx</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_show">ShowActivity</string>
+
+    <string name="permission_storage">permission_storage</string>
+    <string name="permission_accounts">permission_accounts</string>
+    <string name="permission_phone">permission_phone</string>
+    <string name="permission_location">permission_location</string>
+    <string name="permission_audio">permission_audio</string>
+    <string name="permission_message">permission_message</string>
+
+
+</resources>

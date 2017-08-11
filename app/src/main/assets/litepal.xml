@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="BookStore"></dbname>
+    <version value="2"></version>
+    <list>
+        <mapping class="com.wangyd.firstcode.ch06.litepal.Book"></mapping>
+        <mapping class="com.wangyd.firstcode.ch06.litepal.Category"></mapping>
+    </list>
+
+</litepal>
