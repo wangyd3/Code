@@ -110,6 +110,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".zz.FileActivity" />
+        <activity android:name=".ch02.intent.IntentActivity" />
+        <activity android:name=".ch02.intent.IntentTestActivity">
+            <intent-filter>
+                <!--<action android:name="com.wangyd.firstcode.INTENT_TEST" />-->
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="http"></data>
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--<category android:name="android.intent.category.MY_DEFAULT" />-->
+
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

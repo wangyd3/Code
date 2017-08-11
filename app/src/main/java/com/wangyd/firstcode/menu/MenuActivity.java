@@ -5,6 +5,7 @@ import android.widget.ListView;
 
 import com.wangyd.firstcode.R;
 import com.wangyd.firstcode.Utils.BaseActivity;
+import com.wangyd.firstcode.ch02.intent.IntentActivity;
 import com.wangyd.firstcode.ch02.lifecycle.FirstActivity;
 import com.wangyd.firstcode.ch03.customview.CustomActivity;
 import com.wangyd.firstcode.ch03.listview.FruitActivity;
@@ -45,7 +46,8 @@ public class MenuActivity extends BaseActivity {
     private void setMenus() {
         List<MenuItem.Item> items = new ArrayList<>();
         items.add(new MenuItem.Item("LifeCycle", FirstActivity.class));
-        MenuItem menuItem = new MenuItem("CH02-", items);
+        items.add(new MenuItem.Item("Intent", IntentActivity.class));
+        MenuItem menuItem = new MenuItem("CH02-Activity", items);
         menuItems.add(menuItem);
 
         items = new ArrayList<>();
